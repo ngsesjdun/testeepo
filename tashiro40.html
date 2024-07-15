@@ -1,0 +1,60 @@
+<html><head><title>最終田代砲</title><FONT SIZE="4" COLOR="#000000">最終田代砲</FONT> <br> <br>
+最終田代砲は簡易田代砲改 Ver.1.2とメガ粒子田代砲を合体、改良したものです<br><br>
+<script language="javascript"> <!--
+var wind;
+var add;
+function display(){
+add=address.value;wind=window.open(add,'san','WIDTH400,height=400');
+tashiro();
+}
+function tashiro(){wind.location=add;
+fired.value++;
+setTimeout("tashiro();",inter.value*1000000000000000000000);}
+// -->
+</script> </head> <body>
+<html>
+ターゲットURL:<INPUT size=100 type="text" name="urlEd" value="ここにURLを入力してね♪"
+onKeyPress="key()"><br>
+自動更新間隔(1000=1秒):<input type="text" size=10 name="ival" value="1"><br>
+<input type="button" value="発射開始" onClick="kS(1);">
+<input type="text" size=70 name="sta" value="状態:自動更新停止中　自動更新間隔:-　アクセス回数:-" readonly>
+<input type="button" value="発射停止" onClick="kS(0);"><br>
+<iframe id="ccc" name='chi' height=80% width=100%>
+iframe 対応のブラウザが必要です
+</iframe>
+<script language="JavaScript">
+var pp,tt,uu,ac,timeid;
+
+function kR(){
+if(pp==1){ 
+top.chi.location = uu;
+timeid = setTimeout("kR()", tt);
+sta.value="状態:自動更新中　自動更新間隔:"+ (tt/1000) +"秒　アクセス回数:"+1*(++ac)+"回";
+}
+}
+
+function kS(qq){
+pp = qq; ac = 0;
+tt = parseFloat(ival.value);
+if(isNaN(tt)) tt=60000;
+//安全装置　10秒以上の更新間隔で。
+//if(tt<10000) tt=10000;
+//安全装置ここまで
+uu = urlEd.value;
+clearTimeout(timeid);
+if(pp==1) kR();
+else sta.value="状態:自動更新停止中　自動更新間隔:-　アクセス回数:-";
+}
+
+function key(){
+if(event.keyCode == 13){
+uu = urlEd.value;
+top.chi.location = uu;
+kS(0);
+}
+}
+</script>
+</html>
+</body>
+</html>
+ 
